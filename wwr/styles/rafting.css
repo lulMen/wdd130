@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --primary-color: #202C31;
+    --secondary-color: #c0d6df;
+    --accent1-color: #e8dab2;
+    --accent2-color: #dd6e42;
+    
+    --heading-font: 'Glass Antiqua';
+    --paragraph-font: 'Josefin Sans';
+
+    --nav-background-color: #202C31;
+    --nav-link-color: #e8dab2;
+    --nav-hover-link-color: #fff;
+    --nav-hover-background-color: #dd6e42;
+}
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+nav {
+    margin: 20px;
+    padding: 3px;
+    background-color: var(--nav-background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 25px;
+    margin: 5px 0 10px;
+}
+
+a {
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+    border: 1px solid black;
+}
+
+.hero h1, article {
+    position: absolute;
+}
+
+.hero h1 {
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    opacity: .8;
+}
+
+.hero article {
+    margin: 80px 40px;
+    padding: 10px;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    opacity: .8;
+}
+
+.hero article img {
+    float: right;
+    display: block;
+    width: 150px;
+    height: auto;
+}
