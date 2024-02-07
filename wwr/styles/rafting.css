@@ -15,10 +15,10 @@
     --nav-hover-background-color: #dd6e42;
 }
 
-/* * {
+* {
     padding: 0;
     margin: 0;
-} */
+}
 
 body {
     font-family: var(--paragraph-font);
@@ -26,9 +26,22 @@ body {
     padding: 20px;
 }
 
+header {
+    display: grid;
+    align-items: center;
+    padding: 1rem 3rem 1rem 0;
+}
+
+header img {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
 nav {
-    margin: 20px;
     padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 4/8;
     background-color: var(--nav-background-color);
 }
 
@@ -46,6 +59,8 @@ a {
     color: var(--nav-hover-link-color);
     text-decoration: none;
 }
+
+/* Class Selectors */
 
 .hero img {
     display: block;
@@ -82,4 +97,23 @@ a {
     display: block;
     width: 150px;
     height: auto;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(5, 20%);
+}
+
+.adventure-grid h2 {
+    margin-bottom: .25rem;
+    grid-column: 1/6;
+    justify-self: center;
+}
+
+.adventure-grid img {
+    max-width: 75%; 
+}
+
+footer {
+    display: grid;
 }
