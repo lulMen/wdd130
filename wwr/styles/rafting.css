@@ -65,6 +65,14 @@ footer {
     display: grid;
 }
 
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: red;
+}
+
 /* Class Selectors */
 
 .hero img {
