@@ -18,11 +18,12 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 1080px;
     padding: 20px;
 }
 
@@ -58,6 +59,10 @@ p {
 a {
     color: var(--nav-hover-link-color);
     text-decoration: none;
+}
+
+footer {
+    display: grid;
 }
 
 /* Class Selectors */
@@ -114,6 +119,52 @@ a {
     max-width: 75%; 
 }
 
-footer {
+.contact-grid {
     display: grid;
+    grid-template: repeat(3, 50%) / repeat(2, 50%);
+}
+
+.contact-grid h2 {
+    text-align: center;
+}
+
+.contact, .contact-form {
+    justify-self: center;
+}
+
+.contact-info p {
+    padding: .5em;
+    margin: 0;
+}
+
+.contact-form {
+    max-width: 410px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    display: grid;
+}
+
+.form-item {
+    display: grid;
+    padding: 0 0 .5em;
+}
+
+.subscribe {
+    font-size: .8em;
+}
+
+.employees {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: space-around;
+    grid-column: 1/3;
+}
+
+.employee-head {
+    grid-column: 1/3;
+}
+
+.employee img {
+    max-width: 50%;
 }
