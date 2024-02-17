@@ -21,7 +21,7 @@
     <main>
         <div class="contact-grid">
             <div class="contact">
-                <h2>Contact Information</h2>
+                <h1>Contact Information</h1>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26245.24889797181!2d-84.50520523747316!3d34.68862773107087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgeorgia%20river!5e0!3m2!1sen!2sus!4v1708047674596!5m2!1sen!2sus" width="270" height="270" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -38,7 +38,7 @@
                 </section>
             </div>
             <div class="contact-form">
-                <h2>Contact Form</h2>
+                <h1>Contact Form</h1>
                 <form>
                     <div class="form-item">
                         <label for="name">Name</label>
@@ -49,13 +49,24 @@
                         <input type="text" id="email" name="email">
                     </div>
                     <div class="form-item">
-                        <label for="purpose">Purpose</label>
-                        <select id="purpose" name="purpose">
-                        <option value="" selected disabled>Select One ...</option>
-                            <option value="option-1">General Inquiry</option>
-                            <option value="option-2">Reservation Question</option>
-                            <option value="option-3">Website Suggestion</option> 
-                        </select>
+                        <div class="radio-group">
+                            <input type="radio" id="r1" name="r1">
+                            <label for="r1">
+                                General Inquiry
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="r2" name="r2">
+                            <label for="r2">
+                                Reservation Question
+                            </label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="r3" name="r3">
+                            <label for="r3">
+                                Website Suggestion
+                            </label>
+                        </div>
                     </div>
                     <div class="form-item">
                         <label for="message">Message</label>
@@ -66,9 +77,9 @@
                         <label for="subscribe" class="subscribe">Please subscribe me to the monthly newsletter</label>
                    </div> 
                 </form>
-                <button type="submit">Submit</button>
+                <button type="submit">Send Message</button>
             </div>
-            <h2 class="employee-head">Our Employees</h2>
+            <h1 class="employee-head">Our Employees</h1>
             <div class="employees">
                 <figure class="employee">
                     <img src="images/happy-employee-01.jpg" alt="a happy employee">
