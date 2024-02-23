@@ -186,13 +186,14 @@ figure img {
 }
 
 .action {
-    display: float;
+    display: flex;
     grid-column: 1/4;
 }
 
 .action img {
-    max-width: 12em;
-    float: left;
+    max-width: 10em;
+    max-height: 10em;
+    margin-bottom: 5em;
 }
 
 .trips {
@@ -205,3 +206,7 @@ figure img {
     grid-column: 3/4;
 }
 
+.action-text {
+    margin: 0;
+    padding: 0;
+}
